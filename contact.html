@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>WEB222 Store</title>
+  <link href="./Oswald-VariableFont_wght.ttf" rel="stylesheet">
+  <!-- https://colorhunt.co/palette/189676 -->
+
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+  <script src="contactscript.js"></script>
+  <script src="clothes.js"></script>
+</head>
+
+<body>
+  <header>
+    <div id="detail">Cloth Store</div>
+    <div id="title">Tanpoosh</div>
+    <div id="search">
+      <a href="./contact.html">
+        <i class="material-icons">mail</i>
+      </a>
+    </div>
+    <div id="logo"><img src="images/logo.jpg" width="100px" height="50px"></div>
+  </header>
+  <main id="main">
+    <div id="form">
+      <form name="contactUs" method="POST" action=" https://httpbin.org/post" onsubmit="return validateForm();"> 
+        <label for="firstName">
+          Name
+        </label>
+        <br>
+        <input id="firstName" name="firstName" type="text">
+        <br>
+        <label for="lastName">
+          Last Name
+        </label>
+        <br>
+        <input id="lastName" name="lastName" type="text">
+        <br>
+        <label for="email">
+          Email
+        </label>
+        <br>
+        <input id="email" name="email" type="email" required>
+        <br>
+        <label for="address">
+          Address
+        </label>
+        <br>
+        <input id="address" name="address" type="text">
+        <br>
+        <label for="city">
+          City
+        </label>
+        <br>
+        <input list=city name="city" id="cityInput">
+        <datalist id="city" name="city">
+          <option value="Toronto">Toronto
+          <option value="Ottawa">Ottawa
+        </datalist>
+        <br>
+        <label for="postal">
+          Postal Code
+        </label>
+        <br>
+        <input id="postal" name="postal" type="text"  pattern="[a-zA-Z][0-9][a-zA-Z] ?[0-9][a-zA-Z][0-9]$"  required>
+        <br>
+        <label for="option">
+          Option
+        </label>
+        <br>
+        <input id="question" name="option" value="optionQuestion" type="radio" class="optionChoice">Question
+        <br>
+        <input id="comment" name="option" value="optionComment" type="radio" class="optionChoice">Comment
+        <br>
+        <input id="orderProblem" name="option"  value="optionProblem" type="radio" class="optionChoice">Order Problem
+        <br>
+        <div id="orderDiv">
+          <label for="orderNumber">
+            Order Number
+          </label>
+          <br>
+          <input id="orderNumber" name="orderNumber" type="text">
+          <br>
+        </div>
+        <textarea id="textComment" name="textComment" type="text"></textarea>
+        <br>
+        <input name="Nahid Mohammadzadeh" value="Nahid Mohammadzadeh" hidden type="text">
+        <input type="submit" value="Send">
+
+        <!---den input field with your name -->
+      </form>
+    </div>
+  </main>
+  <footer>
+
+    <div id="title">Tanpoosh</div>
+
+    <div id="search">
+      <a href="./contact.html">
+        <i class="material-icons">mail</i>
+      </a>
+    </div>
+
+    <div id='facebook'>
+      <a href="facebook.com">
+        <i class="fa fa-3x fa-facebook-square"></i>
+      </a>
+    </div>
+
+    <br>
+    <p>Copyright &copy;2020</p>
+  </footer>
+
+</body>
+
+</body>
+
+</html>
